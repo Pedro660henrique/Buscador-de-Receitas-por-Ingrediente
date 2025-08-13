@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;/* distancia entre as linhas */
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container{
+    max-width: 800px; /* largura máxima do container */
+    margin: auto; /* centraliza o container */
+    background: #fff;
+    padding: 20px; /* espaçamento interno do container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombra ao redor do container */
+}   
+
+h1{
+    text-align: center; /* centraliza o texto */
+}
+
+.search-form{
+    display: flex; /* usa flexbox para alinhar os itens */
+    gap: 10px; /* espaçamento entre os itens */
+    justify-content: center; /* centraliza os itens horizontalmente */
+    margin-bottom: 20px; /* espaçamento abaixo do formulário */
+}
+
+.search-input{
+    flex-grow: 1; /* faz o input ocupar todo o espaço disponível */
+    padding: 10px; 
+    border: 1px solid #ddd; /* borda do input */
+    border-radius: 5px; /* borda arredondada do input */
+    outline: none; /* remove o contorno padrão do input */
+}
+
+.search-button{
+    padding: 10px 20px; /* espaçamento interno do botão */
+    background-color: #28a745; /* cor de fundo do botão */
+    color: #fff; /* cor do texto do botão */
+    border: none; /* remove a borda padrão do botão */
+    border-radius: 5px; 
+    cursor: pointer; /* muda o cursor ao passar sobre o botão */
+    font-size: 16px; 
+    transition:0.5s;
+}
+
+.search-button:hover{
+    background-color: #0f411a; /* cor de fundo do botão ao passar o mouse */
+}
+
+.recipe-list{
+    display: grid; /* usa grid para organizar os cards */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* cria colunas responsivas */
+    gap: 20px; /* espaçamento entre os cards */
+}
+
+.recipe-card{
+    border: 1px solid #ddd; /* borda do card */
+    border-radius: 5px; /* borda arredondada do card */
+    padding: 10px; /* espaçamento interno do card */
+    text-align: center; /* centraliza o texto dentro do card */
+    cursor:pointer; /* muda o cursor ao passar sobre o card */
+}
+
+.recipe-card img{
+    width: 100%; /* imagem ocupa toda a largura do card */
+    height: 150px; /* mantém a proporção da imagem */
+    border-radius: 5px; /* borda arredondada da imagem */
+    object-fit: cover; /* cobre o espaço do card sem distorcer a imagem */
+}
+
+.recipe-details{
+    margin-top: 20px; /* espaçamento acima dos detalhes da receita */
+}
+
+.recipe-details img{
+    width: 100%; /* imagem ocupa toda a largura do card */
+    max-width: 300px; /* largura máxima da imagem */
+    border-radius: 5px; /* borda arredondada da imagem */
+    object-fit: cover; /* cobre o espaço do card sem distorcer a imagem */
+}
